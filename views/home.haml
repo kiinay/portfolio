@@ -1,6 +1,108 @@
+:sass
+  .menu
+    position: fixed
+    right: 0px
+    width: 250px
+    padding: 5px
+    background-color: #676767
+    a
+      display: block
+      text-decoration: none
+  #container
+    width: 980px
+    .principal
+      color: #696969
 %head
+  %script(src="//code.jquery.com/jquery-1.11.0.min.js")
+  %script(src="/javascripts/scroll.js" texte="javascript")
   %title
-    Portefolio
+    Yannick Placerdat
 %body
-  %h1
-    HELLO WORLD !!!
+  #container
+    .menu
+      %a(href="#who")
+        Qui suis-je ?
+      %a(href="#skills")
+        Compétences
+      %a(href="#implementing")
+        Réalisation
+      %a(href="#contact")
+        Contact
+
+    %h1.principal
+      Yannick Placerdat
+    #who
+      %h1
+        Qui suis-je ?
+      %p
+        Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic,
+        you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero.
+        And most times they're friends, like you and me! I should've known way back when... You know why,
+        David? Because of the kids. They called me Mr Glass.
+    #skills
+      %h1
+        Compétences
+      .languages
+        %h2
+          Langage de programmation
+        %ul
+          %li
+            Ruby
+          %li
+            HAML
+          %li
+            SASS
+          %li
+            CoffeeScript
+          %li
+            HTML5
+          %li
+            CSS3
+          %li
+            Jquerry
+          %li
+            Javascript
+          %li
+            Langage C
+      .frameworks
+        %h2
+          Framework
+        Ruby on Rails
+      .ide
+        %h2
+          Logiciels de programation
+        %ul
+          %li
+            RubyMine
+          %li
+            Sublime Text
+          %li
+            Notepad ++
+      .design
+        %h2
+          Design
+        %ul
+          %li
+            Photoshop
+          %li
+            Illustator
+          %li
+            GIMP
+          %li
+            Inkscape
+      .office
+        %h2
+          Bureautique
+        %ul
+          %li
+            Word (MAC et Windows)
+          %li
+            Open Office
+          %li
+            PowerPoint
+    #implementing
+      %h1
+        Réalisations
+    #contact
+      %h1
+        Contact
